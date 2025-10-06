@@ -69,14 +69,11 @@ export default function TodoApp() {
 
   return (
     <section className="rounded-2xl bg-white/90 p-6 shadow-lg ring-1 ring-black/5 backdrop-blur dark:bg-slate-900/70">
-      <header className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">To-do list</h2>
-          <p className="text-sm text-slate-600 dark:text-slate-300">
-            Tasks are stored in your browser and reset when you refresh the page.
-          </p>
-        </div>
-      </header>
+      <div className="mb-4">
+        <p className="text-sm text-slate-600 dark:text-slate-300">
+          Tasks are stored in your browser and reset when you refresh the page.
+        </p>
+      </div>
 
       <form onSubmit={handleSubmit} className="mb-6 flex flex-col gap-3 sm:flex-row">
         <label className="sr-only" htmlFor="todo-input">

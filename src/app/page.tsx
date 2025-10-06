@@ -14,8 +14,17 @@ export default function Home() {
           </p>
         </header>
 
-        <WeatherWidget />
-        <TodoApp />
+        <section className="space-y-6">
+          <div className="space-y-3">
+            <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">Weather</h2>
+            <WeatherWidget />
+          </div>
+
+          <div className="space-y-3">
+            <h2 className="text-2xl font-semibold text-slate-900 dark:text-white">Tasks</h2>
+            <TodoApp />
+          </div>
+        </section>
       </div>
     </div>
   );
